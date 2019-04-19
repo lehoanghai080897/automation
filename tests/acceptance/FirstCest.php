@@ -7,6 +7,7 @@ class FirstCest
     public function tryToTest(Step\Acceptance\Admin $I, $scenario)
     {
         $I = new AdminTester($scenario);
-        $I->loginAsAdmin('hoanghai.cntt88@gmail.com' , 'Aa25251325');
+        $I->loginAsdmin('hoanghai.cntt88@gmail.com' , 'Aa25251325');
     }
+    
 }
