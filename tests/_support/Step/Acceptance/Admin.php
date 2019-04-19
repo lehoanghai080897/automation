@@ -5,7 +5,7 @@ use Page\Login as LoginPage;
 class Admin extends \AcceptanceTester
 {
 
-    public function loginAsdmin()
+    public function loginAsdmin($name, $password)
     {
         $I = $this;
         $I->amOnPage(LoginPage::$URL);

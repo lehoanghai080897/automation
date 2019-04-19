@@ -1,8 +1,21 @@
+# This is the Codeception Test Suite Configuration
+
+# To use it rename this file to acceptance.suite.yml (it will be ignored by git)
+
+# To run the test modify the following parameters according to your localhost details:
+#  - url
+#  - folder
+#  - db_user and db_pass
+
+# suite for acceptance tests.
+# perform tests in browser using the WebDriver or PhpBrowser.
+# If you need both WebDriver and PHPBrowser tests - create a separate suite.
+
+
 class_name: AcceptanceTester
 modules:
     enabled:
         - JoomlaBrowser
-
     config:
         JoomlaBrowser:
             url: 'https:/wordpress.com/'     # the url that points to the joomla installation at /tests/system/joomla-cms
@@ -12,7 +25,7 @@ modules:
                 unexpectedAlertBehaviour: 'accept'
             username: 'admin'                      # UserName for the Administrator
             password: 'admin'                      # Password for the Administrator
-            database host: 'localhost'             # place where the Application is Hosted #server Address
+            database host: 'localhost'             # place where tche Application is Hosted #server Address
             database user: 'root'                  # MySQL Server user ID, usually root
             database password: ''                  # MySQL Server password, usually empty or root
             database name: 'testjoomla'            # DB Name, at the Server
