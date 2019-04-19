@@ -1,7 +1,6 @@
-
 <?php
-use Step\Acceptance\Admin as AdminTester;
-class FirstCest
+use Step\Acceptance\ctngg as AdminTester;
+class ctnggCest
 {
 
     public function tryToTest(Step\Acceptance\Admin $I, $scenario)
