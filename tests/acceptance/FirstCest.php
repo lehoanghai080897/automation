@@ -1,12 +1,11 @@
 
 <?php
-use Step\Acceptance\Admin as AdminTester;
-class CrossTechCest
+use Step\Acceptance\Admin as Admin;
+class FirstCest
 {
-
-    public function tryToTest(Step\Acceptance\Admin $I, $scenario)
+    public function tryToTest(Admin $I, $scenario)
     {
-        $I = new AdminTester($scenario);
-        $I->loginAsAdmin('hoanghai.cntt88@gmail.com , Aa25251325');
+        $I = new Admin($scenario);
+        $I->loginAsdmin("hoanghai.cntt88@gmail.com" , "Aa25251325");
     }
 }
